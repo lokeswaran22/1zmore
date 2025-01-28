@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Javascript Music App with huge functionalities"
+    />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <script
+      src="https://kit.fontawesome.com/585143586a.js"
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="./script.js"></script>
+    <title>Peace 🕊️</title>
+  </head>
+  <body>
+    <header>
+      <div class="header-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                  <nav class="main-nav">
+                      <li> <a  class="logo">Life is a Song, Love is the Music 🤍</a></li>
+                  </nav>
+                </div>
+              </div>
+            </div>
+          </div>
+      </header>
+    <section id="AllInBody" style="align-content: center;justify-content:center;">
+      <div id="ContentWarpper">
+        <div id="WholeCardContainer">
+          <div id="MusicDesc">
+            <h2 id="SongName"></h2>
+            <p id="Artist"></p>
+          </div>
+          <div id="MusicImg">
+            <img draggable="false" id="SongImg" alt="Music Image - Loki" />
+          </div>
+          <audio id="myAudio"></audio>
+          <div id="Progress_elements">
+            <div id="Progressduration">
+              <div id="Start">0 : 0</div>
+              <!-- <p id="lo" style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">Loki</p> -->
+              <div id="End">0 : 0</div>
+            </div>
+            
+            <div id="ProgressMeterContainer">
+              <div id="ProgrssMeterChild"></div>
+            </div>
+          </div>
+          <br>
+          <div id="MusicControls" style="align-content: space-evenly;gap: 50px;align-items: center;justify-content: center;">
+            <div class="control" title="Previous Song">
+              <i id="Previous" class="fas fa-backward"></i>
+            </div>
+            <div class="control" title="Pause/ play">
+              <i id="PausePlay" class="fas fa-play"></i>
+            </div>
+            <div class="control" title="Next Music">
+              <i id="Next" class="fas fa-forward"></i>
+            </div>
+          </div>
+        </div>
+        <br>
+        <div class="volume-container" style="padding-left: 35px;">
+          <i class="fas fa-volume-down"></i> <!-- Low volume icon -->
+          <input type="range" id="volume-bar" min="0" max="1" step="0.1" value="1"> <!-- Volume slider -->
+          <i class="fas fa-volume-up"></i> <!-- High volume icon -->
+      </div>
+      
+      <!-- <div id="VolumeControl">
+        <input
+          type="range"
+          min="0"
+          max="1"
+          step="0.01"
+          value="1"
+          id="volumeSlider"
+        />&nbsp;&nbsp;
+        <div id="VolumeIcons"class="fas fa-volume-up">
+          <i id="muteButton" ></i>
+        </div>
+      </div> -->
+
+    </div>
+  </div>
+  <br>
+  <br>
+  <footer style="padding: 20px;margin: 10px;width: 500%;">
+    Copyright @
+    <a
+      href="https://trojanx.in/loki/"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      Loki
+    </a>
+    <span id="Year"></span>
+  </footer>
+    </section>
+    
+  </body>
+</html>

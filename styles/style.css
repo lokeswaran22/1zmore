@@ -1,0 +1,501 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Reggae+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Goldman&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  background: #fff;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #2d2c2c;
+  border-radius: 50px;
+}
+
+body {
+  -webkit-perspective: 500px;
+          perspective: 500px;
+  -webkit-user-select: none;
+    -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  overflow-x: hidden;
+  overflow: hidden;
+  height: 100%;
+}
+
+.control {
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+#AllInBody {
+  min-height: 100vh;
+  height: 100px;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  padding: 50px 0px;
+  /* background: linear-gradient(45deg, rgba(0, 238, 255, 0.842), rgba(255, 0, 149, 0.651)), url(../img/bg.jpg); */
+  background-image: url(../img/zz.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  overflow: hidden;
+}
+
+#AllInBody #ContentWarpper {
+  width: 25vw;
+  min-height: 70vh;
+  /* background: linear-gradient(45deg, rgba(0, 0, 0, 0.842), rgba(0, 30, 255, 0.651)); */
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+  -webkit-box-shadow: 1px 2px 10px #000000;
+          box-shadow: 1px 2px 10px #000000;
+  padding: 20px 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  overflow-y: auto;
+  box-sizing: border-box;
+}
+
+#AllInBody #ContentWarpper #WholeCardContainer {
+  width: 100%;
+  text-align: center;
+  padding: 10px 0px;
+}
+
+#AllInBody #ContentWarpper #WholeCardContainer #MusicImg {
+  width: 150px;
+  height: 150px;
+  margin: 10px auto;
+  overflow: hidden;
+}
+
+#AllInBody #ContentWarpper #WholeCardContainer #MusicImg img {
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+  border: 5px solid #ffd900;
+  -o-object-fit: cover;
+    object-fit: cover;
+  /* -webkit-transition: 0.2s; */
+  /* transition: 0.2s; */
+  display: inline-block;
+  text-align: center;
+  justify-content:center;
+}
+
+#AllInBody #ContentWarpper #WholeCardContainer #MusicDesc {
+  margin: 0px 0px 20px 0px;
+}
+
+#AllInBody #ContentWarpper #WholeCardContainer #MusicDesc h2 {
+  font-size :25px;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: #fefefe;
+  text-shadow: 1px 1px 2px black;
+  text-align: center;
+}
+
+#AllInBody #ContentWarpper #WholeCardContainer #MusicDesc p {
+  font-weight: 1000;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  padding: 5px 10px;
+  margin: auto;
+  text-align: center;
+  color: rgb(7, 250, 84);
+}
+
+#AllInBody #ContentWarpper #WholeCardContainer #MusicControls {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0px 90px 0px 90px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#AllInBody #ContentWarpper #WholeCardContainer #MusicControls div {
+  cursor: pointer;
+}
+
+#AllInBody #ContentWarpper #WholeCardContainer #MusicControls div:nth-child(odd) i {
+  border: none;
+  /* border: 2px solid transparent; */
+  border: 2px solid #ffffff;
+}
+
+#AllInBody #ContentWarpper #WholeCardContainer #MusicControls div:nth-child(odd) i:hover {
+  border-color: #ffffff;
+  background: none;
+  color: #ffffff;
+}
+
+#AllInBody #ContentWarpper #WholeCardContainer #MusicControls div i {
+  font-size: 1.1rem;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  color: #ffffff;
+  padding: 15px;
+  border-radius: 100%;
+  transition: 0.3s;
+  border: 2px solid #f7f8f5;
+}
+
+#AllInBody #ContentWarpper #WholeCardContainer #MusicControls div i:hover {
+  background: #ffffff;
+  color: rgb(0, 0, 0);
+}
+
+#AllInBody #ContentWarpper #Progress_elements {
+  padding: 10px 0px;
+  background: -webkit-gradient(linear, right top, left top, from(#1804f1), to(#f5f1f3));
+  background: linear-gradient(to left, #fbfdfd, #0004ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: 'Goldman', cursive;
+  font-weight: 900;
+  text-shadow: 1px 1px 1px white;
+}
+
+#AllInBody #ContentWarpper #Progress_elements #Progressduration {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#AllInBody #ContentWarpper #Progress_elements #ProgressMeterContainer {
+  width: 90%;
+  height: 7px;
+  background: rgb(11, 3, 3);
+  border-radius: 50px;
+  margin: 20px auto 5px auto;
+  cursor: pointer;
+}
+
+#AllInBody #ContentWarpper #Progress_elements #ProgressMeterContainer #ProgrssMeterChild {
+  width: 0%;
+  height: 100%;
+  background: linear-gradient(45deg, #faf9fd, #0303f7);
+  border-radius: 50px;
+}
+
+footer {
+  background: #454445;
+  padding: 5px 0px;
+  text-align: center;
+  color: white;
+}
+
+footer a {
+  text-decoration: none;
+  color: rgb(255, 0, 0);
+  font-size: 20px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/* .anime {
+  -webkit-animation: imgAnime 3s linear infinite both;
+          animation: imgAnime 3s linear infinite both;
+}
+
+@-webkit-keyframes imgAnime {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+
+@keyframes imgAnime {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+} */
+
+@media screen and (max-width: 1125px) {
+  #ContentWarpper {
+    width: 40vw !important;
+  }
+  #MusicDesc h2 {
+    font-size: 35px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  * {
+    cursor: default !important;
+  }
+  #ContentWarpper {
+    width: 50vw !important;
+  }
+  #MusicDesc h2 {
+    font-size: 25px;
+  }
+}
+
+@media screen and (max-width: 567px) {
+  #ContentWarpper {
+    width: 70vw !important;
+  }
+  #ContentWarpper #MusicDesc p {
+    padding: 5px 2px !important;
+  }
+  #MusicDesc h2 {
+    font-size: 20px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
+/* Resetting default margin and padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  position:sticky;
+  /* align-content: space-evenly; */
+}
+
+/* Basic styling for header */
+header {
+  background-color:#2a2a2a; /* Change as needed */
+  color: #fff; /* Change as needed */
+  padding: 20px 0; /* Adjust padding as needed */
+}
+
+.header-area {
+  width: 100%;
+}
+
+.container {
+  max-width: 1200px; /* Adjust as needed */
+  margin: 0 auto;
+  padding: 0 150px;
+}
+
+.main-nav {
+  display: flex;
+  justify-content: center;
+}
+
+.main-nav li {
+  list-style-type: none;
+}
+
+.main-nav a {
+  text-decoration: none;
+  color: #fff; /* Change as needed */
+  font-size: 20px; /* Adjust font size as needed */
+  /* Making font bold */
+  font-weight: bold;
+  /* Adding some padding and border radius */
+  padding: 10px 20px;
+  border-radius: 5px;
+  /* Adding a gradient background */
+  /* background: linear-gradient(45deg, #ff416c, #ff4b2b); */
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.main-nav a {
+  /* Adding a slight shadow effect on hover */
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+  background-color: #fff;
+}
+
+/* Responsive styles */
+@media only screen and (max-width: 768px) {
+  .container {
+    padding: 0 10px;
+  }
+  
+  .main-nav {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .main-nav li {
+    margin-top: 10px;
+    margin-bottom: 15px;
+  }
+  #MusicDesc h2 {
+    font-size: 30px;
+  }
+}
+.volume-container {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.volume-container i {
+  color: #ffffff;
+  font-size: 16px;
+}
+
+.volume-container input[type="range"] {
+  width: 60%;
+  margin: 0 10px;
+}
+
+
+/* // media queries */
+@media only screen and (min-width: 1440px) {
+  /* #ContentWarpper {
+    width: 20vw !important;
+  } */
+  #MusicDesc h2 {
+    font-size: 40px;
+  }
+
+  .container {
+    max-width: 1400px;
+  }
+  
+  .main-nav a {
+    font-size: 22px;
+  }
+
+  .volume-container input[type="range"] {
+    width: 80%;
+  }
+}
+@media only screen and (min-width: 1024px) and (max-width: 1439px) {
+  /* #ContentWarpper {
+    width: 25vw !important;
+  } */
+
+  #MusicDesc h2 {
+    font-size: 40px;
+  }
+  .main-nav a {
+    font-size: 20px;
+  }
+
+  .volume-container input[type="range"] {
+    width: 70%;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  /* #ContentWarpper {
+    width: 40vw !important;
+  } */
+  #MusicDesc h2 {
+    font-size: 30px;
+  }
+
+  .main-nav {
+    flex-direction: column;
+  }
+
+  .main-nav li {
+    margin: 10px 0;
+  }
+
+  .volume-container input[type="range"] {
+    width: 90%;
+  }
+}
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  /* #ContentWarpper {
+    width: 80vw !important;
+  } */
+  #MusicDesc h2 {
+    font-size: 30px;
+  }
+
+  .main-nav a {
+    font-size: 18px;
+  }
+
+  .volume-container input[type="range"] {
+    width: 95%;
+  }
+
+  .container {
+    padding: 0 15px;
+  }
+}
+@media only screen and (max-width: 479px) {
+  /* #ContentWarpper {
+    width: 90vw !important;
+  } */
+
+  .main-nav a {
+    font-size: 16px;
+  }
+
+  .volume-container input[type="range"] {
+    width: 100%;
+  }
+
+  .container {
+    padding: 0 10px;
+  }
+}
+@media screen and (orientation: landscape) {
+  /* #ContentWarpper {
+    width: 50vw !important;
+  } */
+
+  .main-nav a {
+    font-size: 18px;
+  }
+  #MusicDesc h2 {
+    font-size: 30px;
+  }
+}
+
+@media screen and (orientation: portrait) {
+  /* #ContentWarpper {
+    width: 90vw !important;
+  } */
+
+  .main-nav a {
+    font-size: 16px;
+  }
+  #MusicDesc h2 {
+    font-size: 25px;
+  }
+}
